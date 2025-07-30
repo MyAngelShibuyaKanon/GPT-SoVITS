@@ -331,7 +331,7 @@ if [ "$USE_CUDA" = true ] && [ "$WORKFLOW" = false ]; then
     fi
 elif [ "$USE_ROCM" = true ] && [ "$WORKFLOW" = false ]; then
     echo -e "${INFO}Installing PyTorch For ROCm 6.2..."
-    run_pip_quiet torch torchaudio --index-url "https://download.pytorch.org/whl/rocm6.2"
+    run_pip_quiet torch torchaudio --index-url "https://download.pytorch.org/whl/rocm6.3"
 elif [ "$USE_CPU" = true ] && [ "$WORKFLOW" = false ]; then
     echo -e "${INFO}Installing PyTorch For CPU..."
     run_pip_quiet torch torchaudio --index-url "https://download.pytorch.org/whl/cpu"
